@@ -62,7 +62,10 @@
 @media screen and (min-width:768px) {
     .hero__button {
         display: block;
-    }
+        transform: rotate(-90deg);
+
+        background-color: transparent;
+        border: none;
 
 }
 
