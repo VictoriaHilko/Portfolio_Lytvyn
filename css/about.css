@@ -1,8 +1,17 @@
-.about {
-}
-
-.about__title {
-}
+/* .about__container {
+    padding-top: 80px;
+    padding-bottom: 80px;
+} */
 
 .about__undertitle {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    max-width: 485px;
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.05;
+
+    color: #070707;
 }

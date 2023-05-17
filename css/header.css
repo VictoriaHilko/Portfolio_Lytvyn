@@ -1,7 +1,8 @@
 
 /* Mobile */
-.header__container {
+.header__container{
     display: none;
+    padding: 0;
 }
 
 /* Tablet and > */
@@ -57,10 +58,6 @@
 .header__link:focus{
     color: #070707;
 }
-
-/* .header__link.current{
-    color: #070707;
-} */
 
 .header__link {
     font-style: normal;
