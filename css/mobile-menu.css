@@ -31,8 +31,6 @@
 }
 
 .menu__container {
-    /* display: flex;
-    flex-direction: column; */
     position: fixed;
 
     top: 0;

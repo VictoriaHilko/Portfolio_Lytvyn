@@ -60,7 +60,17 @@
                         </svg>
                     </button>
                 </div>
-                <img class="hero__image" src="./images/hero/hero-photo.jpeg" alt="Personal photo">
+                <img class="hero__image" src="./images/hero/hero-photo.jpg"
+                srcset="./images/hero/hero-photo_360.jpg 360w,
+                        ./images/hero/hero-photo_540.jpg 540w,
+                        ./images/hero/hero-photo_720.jpg 720w"
+                sizes="(min-width: 1128px) 720px,
+                       (min-width: 768px) 540px,
+                       (min-width: 428px) 360px, 100vw"
+                alt="Personal photo"
+                width="768"
+                loading="lazy">
+
             </div>
 
         </section>
@@ -135,25 +145,46 @@
 
                 <ul class="portfolio__list list">
                     <li class="portfolio__item item">
-                        <img class="portfolio__image" src="./images/portfolio/studio-project.png"
+                        <img class="portfolio__image" src="./images/portfolio/studio-project.jpg"
                             alt="Screen of web-site for web-studio project"
-                            width="1128">
+                            srcset="./images/portfolio/studio-project_360.jpg 360w,
+                            ./images/portfolio/studio-project_540.jpg 540w,
+                            ./images/portfolio/studio-project_720.jpg 720w"
+                sizes="(min-width: 1128px) 720px,
+                       (min-width: 768px) 540px,
+                       (min-width: 428px) 360px, 100vw"
+                width="720"
+                loading="lazy">
                         <a class="portfolio__link link" href="https://victoriahilko.github.io/goit-markup-hw-07/">
                             <span class="portfolio__name">Web-studio lending page - Link to GitHub LivePage</span>
                         </a>
                     </li>
                     <li class="portfolio__item item">
-                        <img class="portfolio__image" src="./images/portfolio/cucina-project.png"
+                            <img class="portfolio__image" src="./images/portfolio/cucina-project.jpg"
                             alt="Screen of web-site for restaraunt project"
-                            width="1128">
+                            srcset="./images/portfolio/cucina-project_360.jpg 360w,
+                            ./images/portfolio/cucina-project.jpg 540w,
+                            ./images/portfolio/cucina-project.jpg 720w"
+                sizes="(min-width: 1128px) 720px,
+                       (min-width: 768px) 540px,
+                       (min-width: 428px) 360px, 100vw"
+                width="720"
+                loading="lazy">
                         <a class="portfolio__link link" href="https://nightven.github.io/sauce/">
                             <span class="portfolio__name">CUCINA DI CATHERINA lending page - Link to GitHub LivePage</span>
                         </a>
                     </li>
                     <li class="portfolio__item item">
-                        <img class="portfolio__image" src="./images/portfolio/fresh-portfolio.png"
+                            <img class="portfolio__image" src="./images/portfolio/fresh-portfolio.jpg"
                             alt="Screen of web-site for restaraunt project"
-                            width="1128">
+                            srcset="../images/portfolio/fresh-portfolio_360.jpg 360w,
+                            ./images/portfolio/fresh-portfolio_540.jpg 540w,
+                            ./images/portfolio/fresh-portfolio_720.jpg 720w"
+                sizes="(min-width: 1128px) 720px,
+                       (min-width: 768px) 540px,
+                       (min-width: 428px) 360px, 100vw"
+                width="720"
+                loading="lazy">
                         <a class="portfolio__link link" href="https://ephemerian.github.io/404Group/">
                             <span class="portfolio__name">FRESH HARVEST BOX - Link to GitHub LivePage</span>
                         </a>
@@ -199,6 +230,12 @@
                 </ul>
 
                 <p class="contacts__description">Like me on <br> LinkedIn, Instagram, Facebook</p>
+
+                <button class="go-up">
+                    <svg class="go-up-icon" width="16" height="16">
+                      <use href="./images/icons-sprite.svg#icon-up"></use>
+                    </svg>
+                  </button>
             </div>
 
         </footer>
@@ -238,6 +275,7 @@
         integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
         crossorigin="anonymous"></script>
     <script defer src="./js/mobile-menu.js"></script>
+    <script defer src="./js/go-up.js"></script>
 
 </body>
 

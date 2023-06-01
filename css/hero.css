@@ -1,7 +1,7 @@
 .hero__container {
     position: relative;
     padding-top: 0;
-    padding-bottom: 0;
+    /* padding-bottom: 0; */
 }
 
 @media screen and (max-width:767px) {
@@ -31,25 +31,29 @@
 .hero__title {
     max-width: 125px;
     margin-bottom: 25px;
+    text-align: left;
 }
 
 /* Tablet and > */
 @media screen and (min-width:768px) {
     .hero__title {
         margin: 0;
+        text-align: center;
     }
 }
 
 /* Mobile */
 .hero__undertitle {
-    max-width: 160px;
+    max-width: 180px;
     margin-bottom: 35px;
+    text-align: left;
 }
 
 /* Tablet and > */
 @media screen and (min-width:768px) {
     .hero__undertitle {
         margin: 0;
+        text-align: center;
     }
 }
 
@@ -66,11 +70,10 @@
 
         background-color: transparent;
         border: none;
-
+    }
 }
 
 .hero__image {
-    display: flex;
-    justify-content: center;
-
+    margin-left: auto;
+    margin-right: auto;
 }

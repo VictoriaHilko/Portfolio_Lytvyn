@@ -25,6 +25,17 @@
     background-color: black;
     border: none;
     border-radius: 50px;
+
+    transition: background-color, border;
+    transition-duration: 450ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contacts__button:hover,
+.contacts__button:focus{
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
 }
 
 .contacts__list {
@@ -36,9 +47,6 @@
     margin-bottom: 50px;
 }
 
-.contacts__item {}
-
-.contacts__link {}
 
 .contacts__description {
     font-weight: 400;
@@ -49,6 +57,64 @@
     color: #828282;
 }
 
+.contacts__item{
+    padding: 10px;
+
+    transition: border;
+    transition-duration: 450ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contacts__item:hover
+.contacts__item:focus {
+
+    border: 2px solid black;
+    border-radius: 30%;
+}
+
 .contacts__icon{
     fill: black;
 }
+
+/* Scroll */
+.go-up {
+    display: none;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+  
+  
+    font-size: 20px;
+    padding: 11px;
+  
+    color: black;
+    background-color: white;
+  
+    border: 1px solid black;
+    border-radius: 50px;
+  
+    cursor: pointer;
+
+    transition: background-color;
+    transition-duration: 450ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  }
+  
+  .go-up:hover,
+  .go-up:focus {
+    background-color: rgb(240, 232, 232);
+  }
+  
+  .go-up-visible {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .go-up-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: currentColor;
+  }
